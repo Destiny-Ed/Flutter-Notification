@@ -1,7 +1,11 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:local_notification_app/firebase_message_provider.dart';
 import 'package:local_notification_app/notification.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -50,6 +54,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    NotificationListenerProvider().getMessage(context);
+    print("dkfkdfkdjfdkfdfdfdfd");
+  }
 
   @override
   Widget build(BuildContext context) {

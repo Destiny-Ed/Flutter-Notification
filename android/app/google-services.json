@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340915673630",
+    "project_id": "testiny-f1a6d",
+    "storage_bucket": "testiny-f1a6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340915673630:android:966d91ce2f6c2e87766c0f",
+        "android_client_info": {
+          "package_name": "com.example.local_notification_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340915673630-17boovnjlbbb5b3f9k9fgif4ipdnv206.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChdesBBdUHAtWZ6EKzdV1I2HiCFl9g_P0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340915673630-17boovnjlbbb5b3f9k9fgif4ipdnv206.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
