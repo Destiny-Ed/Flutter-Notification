@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:local_notification_app/firebase_message_provider.dart';
 import 'package:local_notification_app/notification.dart';
@@ -55,11 +56,20 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  FirebaseMessaging _firebaseMessaging = FirebaseMessaging.instance;
+
   @override
   void initState() {
     super.initState();
     NotificationListenerProvider().getMessage(context);
     print("dkfkdfkdjfdkfdfdfdfd");
+
+    getToken();
+  }
+
+  void getToken() async {
+    final token = await _firebaseMessaging.getToken();
+    print("dlllllllllllllllll $token");
   }
 
   @override
